@@ -1,0 +1,188 @@
+.listPesquisa {
+  position: absolute;
+  width: 320px;
+  height: 100%;
+  border-radius: 0 0 50px 0;
+  background-color: #fff;
+  top: 10%;
+  left: -350px;
+  transition: .5s ease-in;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+.listPesquisa::-webkit-scrollbar {
+  display: none;
+}
+
+.linhaPesqusa {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  /* top: 70px;  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.Membro {
+  position: relative;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.imgMembro {
+  position: relative;
+  margin: 0 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgMembro img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.infoMembro {
+  position: relative;
+  width: 150px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nameMembro {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+}
+
+.subTitle {
+  font-size: 18px;
+  color: #c3c3c3;
+  overflow-x: hidden;
+}
+
+/* CheckBox Style */
+
+.checkboxAnimate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.checkboxAnimate label {
+  position: relative;
+  cursor: pointer;
+}
+
+.check {
+  visibility: hidden;
+
+}
+
+.checkboxAnimate label input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.inputCheck {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  position: relative;
+  top: 6px;
+  margin-right: 7px;
+  transition: 0.4s;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.inputCheck::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 6px;
+  border-bottom: 4px solid #fff;
+  border-left: 4px solid #fff;
+  transform: scale(0) rotate(-45deg);
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  transition: 0.4s;
+}
+
+.checkboxAnimate label input:checked~.inputCheck {
+  background-color: #06b1c5;
+  border-color: #06b1c5;
+  animation-name: input-animate;
+  animation-duration: 0.7s;
+}
+
+.checkboxAnimate label input:checked~.inputCheck::before {
+  transform: scale(1) rotate(-45deg);
+  animation-name: input-check;
+  animation-duration: 0.2s;
+  animation-delay: 0.3s;
+}
+
+@keyframes input-animate {
+  0% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(1.3, 0.7);
+  }
+
+  55% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1.2, 0.8);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+
+  90% {
+    transform: scale(1.1, 0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes input-check {
+  0% {
+    transform: scale(0) rotate(-45deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(-45deg);
+  }
+}

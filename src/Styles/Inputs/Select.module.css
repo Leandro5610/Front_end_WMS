@@ -1,0 +1,55 @@
+select{
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border-radius: 5px;
+    border: 2px solid #000;
+    background: transparent;
+    background-image: none;
+}
+.select{
+    position: relative;
+    display: flex;
+    margin: 20px 0 20px 0;
+    width: 465px;
+    height: 50px;
+    line-height: 3;
+    background: #fff;
+    border-radius: 5px;
+    z-index: 0;
+}
+select{
+    flex: 1;
+    padding: 0 .5em;
+    color: #000;
+    cursor: pointer;
+    font-size: 1em;
+    z-index: 2; 
+    text-transform: capitalize;
+}
+
+option{
+    text-transform: capitalize;
+}
+
+.arrowDown{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 15px;
+    right: 10px;
+    transition: 0.3s linear;
+    z-index: 1;
+}
+
+.arrowUp{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 15px;
+    right: 10px;
+    transform: rotateZ(180deg);
+    transition: 0.3s linear;
+    z-index: 1;
+}
+

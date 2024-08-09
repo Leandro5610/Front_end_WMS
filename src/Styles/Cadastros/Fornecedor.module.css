@@ -1,0 +1,400 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e2e2;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+.voltar {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.formContainer {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 650px;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    transform: scale(1);
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    top: 1%;
+    right: 1%;
+}
+
+.logo {
+    position: relative;
+    width: 100%;
+}
+
+.form {
+    position: absolute;
+    bottom: 20%;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    position: absolute;
+    bottom: -20%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch .inputCheckbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+}
+
+.label {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    right: 25%;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+}
+
+.inputCheckbox:checked+.slider {
+    background-color: #2196F3;
+}
+
+.inputCheckbox:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.inputCheckbox:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.doubleInput {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.doubleInput1 {
+    position: relative;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* DISIGN VIDEO */
+.design_video {
+    position: absolute;
+    left: 10%;
+    top: 2%;
+    width: 50%;
+    height: 95%;
+    transform: scale(1);
+}
+
+.title {
+    position: relative;
+    top: 15%;
+    left: 5%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    width: 550px;
+    height: 100px;
+    z-index: 1;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:2560px) {
+    .formContainer {
+        right: 15%;
+    }
+
+    .design_video {
+        transform: scale(0.9);
+        left: 13%;
+    }
+}
+
+@media screen and (max-width:1978px) {
+    .formContainer {
+        right: 15%;
+    }
+
+    .design_video {
+        transform: scale(0.9);
+        left: 5%;
+    }
+
+    .title{
+        top: 20%;
+    }
+}
+
+@media screen and (max-width:1800px) {
+    .formContainer {
+        right: 12%;
+    }
+
+    .design_video {
+        transform: scale(0.9);
+        left: 5%;
+    }
+}
+
+@media screen and (max-width:1700px) {
+    .formContainer {
+        right: 11%;
+        transform: scale(1);
+    }
+
+    .design_video {
+        transform: scale(1);
+        left: 4%;
+    }
+    .title{
+        top: 20%;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:1600px){
+    .title{
+        top: 23%;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .formContainer {
+        right: 5%;
+        transform: scale(1);
+    }
+
+    .design_video {
+        transform: scale(1);
+        left: 2%;
+    }
+    .title{
+        top: 25%;
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .formContainer {
+        right: 3%;
+        transform: scale(1);
+    }
+
+    .design_video {
+        transform: scale(1);
+        left: 3%;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .formContainer {
+        right: 2%;
+        top: -5%;
+        transform: scale(0.9);
+    }
+
+    .design_video {
+        transform: scale(0.9);
+        left: 0%;
+        top: -4%;
+    }
+
+    .video {
+        width: 110%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .formContainer {
+        right: -2%;
+        top: -8%;
+        transform: scale(0.85);
+    }
+
+    .design_video {
+        transform: scale(0.9);
+        left: 0%;
+        top: -4%;
+    }
+
+    .video {
+        width: 110%;
+    }
+
+    .title{
+        top: 28%;
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width:1126px){
+    .title{
+        top: 30%;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .formContainer {
+        right: -6%;
+        top: -12%;
+        transform: scale(0.75);
+    }
+
+    .design_video {
+        transform: scale(0.85);
+        left: -1%;
+        top: -10%;
+    }
+
+    .video {
+        width: 110%;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .formContainer {
+        position: relative;
+        right: -1%;
+        top: -3%;
+        transform: scale(1);
+    }
+
+    .design_video {
+        display: none;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .formContainer {
+        position: relative;
+        right: -1%;
+        top: -7.5%;
+        transform: scale(0.9);
+    }
+
+    .design_video {
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .formContainer {
+        position: relative;
+        right: -2%;
+        top: -9.5%;
+        transform: scale(0.85);
+    }
+
+    .design_video {
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .formContainer {
+        position: absolute;
+        right: -10%;
+        top: -10.5%;
+        width: 120%;
+        height: 100%;
+        transform: scale(0.8);
+    }
+
+    .design_video {
+        display: none;
+    }
+}

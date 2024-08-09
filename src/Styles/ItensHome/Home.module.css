@@ -1,0 +1,1063 @@
+.components {
+    width: 100%;
+    height: 100%;
+    background-color: #C4C9DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: last baseline;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.home::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+.home2{
+    min-width: 500px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.homeCenter {
+    height: 100%;
+    width: 70%;
+    transition: .2s ease-in;
+    padding: 20px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 2%;
+    left: 1%;
+}
+
+.HomeRight {
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: -0.5%;
+    transition: .2s ease-in;
+}
+
+.cardTutorial {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    max-height: 500px;
+    background: linear-gradient(287deg, #CA8DEA 0%, #6064F9 120%);
+    border-radius: 20px 20px 170px 20px;
+    box-shadow: rgba(0, 0, 0, 0.402) 0px 8px 20px;
+    transition: .2s ease-in;
+}
+
+.titleCard {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    width: 650px;
+    height: 100px;
+
+}
+
+.subCard {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subTitle {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    margin: 1% 0;
+}
+
+.btns {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tutorial {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    background-color: #ED80FD;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.simulacao {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.Caixa {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardTutorialTexts{
+    width: 60%;
+    height: 100%;
+}
+
+.C1 {
+    width: 80%;
+    min-width: 300px;
+    position: relative;
+    top: 0;
+    animation: caixa 4s linear infinite;
+    transform: scale(1.1);
+}
+
+@keyframes caixa {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 5%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.listHistorico {
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    height: 450px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.402) 0px 8px 20px;
+    transition: .2s ease-in;
+}
+
+.BaseBotChat {
+    position: fixed;
+    bottom: -470px;
+    right: 4%;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    z-index: 10;
+}
+
+.BotChat {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 25;
+    transition: .5s;
+}
+
+.baseAI {
+    position: absolute;
+    top: -10%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.foto {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 26;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.foto img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 30px;
+    left: -25px;
+    cursor: pointer;
+    z-index: 28;
+}
+
+.btnOn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D71FF;
+    top: -15%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.btnOff {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D71FF;
+    top: -15%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.interogacao {
+    position: absolute;
+    background-color: #4D71FF;
+    width: 60px;
+    height: 60px;
+    top: -12%;
+    left: 20%;
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60%;
+    z-index: 1;
+    transition: .5s;
+}
+
+.triangulo {
+    position: absolute;
+    right: -3%;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #4D71FF;
+    transform: rotate(30deg);
+}
+
+.BotChatTitle {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    top: 3%;
+    left: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.BCTitleH3 {
+    position: relative;
+    color: #4D71FF;
+    font-size: 18px;
+}
+
+.iframeBotChat {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 90%;
+}
+
+/* MSG */
+
+
+.conversa {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    top: -5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* overflow-y: scroll; */
+}
+
+.msgBot {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    right: -5%;
+    width: 300px;
+    height: 50px;
+    margin: 5% 0;
+}
+
+.MsgImgBot {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.MsgBot {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 80%;
+    min-height: 40px;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MsgNameBot {
+    position: absolute;
+    top: -20%;
+    right: 20%;
+    color: #9E9E9E;
+    font-size: 11;
+    font-weight: 400;
+
+}
+
+.msgUser {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: -5%;
+    width: 300px;
+    height: 50px;
+    margin: 5% 0;
+}
+
+.MsgImgUser {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.MsgName {
+    position: absolute;
+    top: -20%;
+    left: 20%;
+    color: #9E9E9E;
+    font-size: 11;
+    font-weight: 400;
+
+}
+
+.Msg {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    width: 80%;
+    min-height: 40px;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InfoMsg {
+    width: 90%;
+    padding: 10px;
+}
+
+.Duvida {
+    position: absolute;
+    bottom: 5%;
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+
+}
+
+/*  */
+
+.estatisticas {
+    width: 450px;
+    height: 450px;
+    min-width: 300px;
+    min-height: 400px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.402) 0px 8px 20px;
+    font-size: 13px;
+}
+
+.estatisticas span {
+    width: 100%;
+    height: 10%;
+    font-size: 150%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.statusHead {
+    height: 35px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.estatisticas p {
+    margin-top: 8px;
+}
+
+.titleStatus {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+    left: -20px;
+    top: -5px;
+    word-break: break-all;
+}
+
+.statusContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90%;
+}
+
+.saldo {
+    margin: 12px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.circleStatus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 50px;
+    top: -25px;
+    left: -25px;
+    box-shadow: rgba(0, 0, 0, 0.598) 0px 5px 15px;
+}
+
+.status1 {
+    width: 35%;
+    padding: 10px;
+    height: 40%;
+    border-radius: 20px;
+    color: white;
+    margin: 20px;
+    background: linear-gradient(180deg, #00FFF0 0%, #003BD4 100%);
+}
+
+.status2 {
+    width: 35%;
+    padding: 10px;
+    height: 40%;
+    border-radius: 20px;
+    color: white;
+    margin: 20px;
+    background: linear-gradient(180deg, #E15AE3 0%, #8E0090 100%);
+}
+
+.status3 {
+    width: 35%;
+    padding: 10px;
+    height: 40%;
+    border-radius: 20px;
+    color: white;
+    margin: 20px;
+    background: linear-gradient(180deg, #44A118 0%, #194206 100%);
+}
+
+.status4 {
+    width: 35%;
+    padding: 10px;
+    height: 40%;
+    border-radius: 20px;
+    color: white;
+    margin: 20px;
+    background: linear-gradient(180deg, #FF9900 0%, #FF4D00 100%);
+}
+
+.base {
+    position: relative;
+    width: 450px;
+    min-height: 420px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.402) 0px 8px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.btnsList {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px 8px 20px;
+    z-index: 9;
+}
+
+.buttons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.252) 0px 8px 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 18px;
+    transition: .2s ease-in;
+}
+
+.buttons:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.buttonsFocus {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.402) 0px 8px 20px;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    transition: .2s ease-in;
+}
+
+.base_form {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -450px;
+    bottom: -45px;
+    transition: 0.5s;
+}
+
+.listaPedidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 450px;
+    height: 75%;
+}
+
+.thead {
+    font-size: 15px;
+    position: relative;
+    height: 50px;
+    border-bottom: 5px solid #F2F2F4;
+}
+
+.listaFornecedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 450px;
+    height: 75%;
+}
+
+.listaProdutos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 450px;
+    height: 75%;
+
+}
+
+.headerList {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerTitle {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SubTitle {
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.headerListMovimentacao {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.headerTitleMovimentacao {
+    position: relative;
+    left: 2%;
+    height: 30px;
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SubTitleMovimentacao {
+    position: relative;
+    left: 5%;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    width: 220px;
+    display: flex;
+    align-items: center;
+}
+
+.addFornecedor {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    color: #4D71FF;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipo {
+    width: 28%;
+    font-size: 20px;
+}
+
+.data {
+    position: relative;
+    left: 2%;
+    width: 28%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.produtoNome {
+    font-size: 20px;
+    color: #A7A7A7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.tabelaContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+
+}
+
+.headerListH {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 65px;
+}
+
+.tabelaHistorico {
+    position: absolute;
+    bottom: 5%;
+    width: 98%;
+    height: 65%;
+    overflow-y: scroll;
+    /* background-color: #9E9E9E; */
+}
+
+.tabelaMovimentacao {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.tabelaMovimentacaoHead {
+    font-size: 20px;
+    color: #A7A7A7;
+    height: 20%;
+}
+
+.HeaderMovimentacao {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #A7A7A7;
+}
+
+.barra {
+    position: absolute;
+    bottom: 0;
+    right: 2.5%;
+    width: 95%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #F2F2F4;
+}
+
+
+.qntMovimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.tabelaMovimentacaoBody {
+    height: 80%;
+}
+
+.trMovimentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    height: 70px;
+}
+
+.excluirBtn{
+    cursor: pointer;
+}
+
+.excluir{
+    color: red;
+}
+
+.addTitle {
+    color: #4D71FF;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 0 5px;
+}
+
+.headerTr th {
+    width: 28%;
+}
+
+.thead th {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.lista {
+    position: absolute;
+    width: 415px;
+    height: 215px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.tabela {
+    border-collapse: collapse;
+    width: 90%;
+    text-align: center;
+}
+
+/* POPUP */
+
+.popUp {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.relatoriosBtn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    background-color: #6064F9;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.402) 0px 5px 20px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.relatoriosBtn:hover{
+    font-size: 17px;
+}
+
+.baseSelect{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select{
+    appearance: auto;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+.select option{
+    color: #000;
+    width: 100%;
+    border: none;
+}
+
+.selectPesquisa{
+    max-width: 100px;
+    height: 50px;
+}
+
+.divPesquisa{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media screen and (min-width:1650px) {
+    .home2{
+        width: 100%;
+    }
+    .HomeRight{
+        width: 30%;
+    }
+    .homeCenter{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1650px) {
+    .home2{
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        padding: 40px;
+    }
+    .HomeRight{
+        width: 100%;
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 500px;
+        padding-right: 0;
+    }
+    .home{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .homeCenter{
+        width: 100%;
+        height: auto;
+    }
+    .estatisticas{
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:1190px) {
+    .home2{
+        width: 90%;
+    }
+    .headerTitleMovimentacao{
+        width: 200px;
+    }
+    .InputPesquisa_inputBox__yyzIX{
+        left: 0;
+    }
+    .titleStatus{
+        font-size: 13px;
+    }
+    .estatisticas{
+        margin-right: 0;
+        transform: scale(0.9);
+        width: 400px;
+    }
+    .relatoriosBtn{
+        width: 40px;
+        font-size: 20px;
+        margin-right: 20px;
+        min-width: 30px;
+    }
+    .relatoriosBtn p{
+        display: none;
+    }
+    .base{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .estatisticas{
+        transform: scale(0.8);
+    }
+    .base{
+        transform: scale(0.8);
+    }
+    .titleCard{
+        width: 600px;
+        font-size: 40px;
+    }
+    .subCard{
+        width: 200px;
+        margin-top: 20px;
+    }
+}

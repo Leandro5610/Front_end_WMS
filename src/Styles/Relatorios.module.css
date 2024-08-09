@@ -1,0 +1,172 @@
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.relatoriosDiv{
+    position: relative;
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.274) 0 0px 24px 10px;
+    padding: 20px;
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .2s ease-in;
+    border: none;
+}
+
+.close:disabled {
+    color: rgb(80, 80, 80);
+}
+
+.close:hover {
+    color: rgb(255, 0, 0);
+}
+
+.close:hover:not():disabled {
+    color: rgb(80, 80, 80);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gerar{
+    cursor: pointer;
+    background-color: #2F80ED;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relatoriosContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 90%;
+}
+
+.loading {
+    bottom: 10px;
+    width: 50px;
+    height: 40px;
+    display: none;
+}
+
+.divInputs{
+    display: none;
+    flex-direction: column;
+    transition: 0.3s linear;
+    opacity: 0;
+}
+
+.divInputs form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.relatorioSection{
+    width: 40%;
+    height: 40%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.274) 0 0px 10px 5px;
+    transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.relatoriobtns{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.relatorioSection:hover{
+    transform: scale(1.1);
+}
+
+.alertOn {
+    animation-name: alert-animate;
+    animation-duration: 0.3s;
+}
+
+@keyframes alert-animate {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.3, 0.7);
+    }
+
+    55% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(1.2, 0.8);
+    }
+
+    80% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(1.1, 0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

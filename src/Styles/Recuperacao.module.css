@@ -1,0 +1,244 @@
+.container {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.recuperacao {
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 200px;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.274) 0 0px 24px 10px;
+}
+
+.botao {
+    width: 130px;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 5px;
+    margin-left: 80px;
+    background-color: #2F80ED;
+    border: none;
+    font-weight: bold;
+    font-size: 15;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.close {
+    width: 20px;
+    height: 20px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .2s ease-in;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close:hover {
+    color: red;
+}
+
+.recuperacaoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.recuperacaoContainer p {
+    font-size: 15px;
+    width: 400px;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 20px;
+    height: 70px;
+}
+
+.btn form {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recuperacaoContainer i {
+    font-size: 60px;
+    margin-right: 30px;
+}
+
+.alertOn {
+    animation-name: alert-animate;
+    animation-duration: 0.3s;
+}
+
+.inputStyle {
+    border-radius: 10px;
+    color: black;
+    outline: none;
+    width: 80px !important;
+    height: 100px;
+    border: none;
+    font-size: 50px;
+    border: #444444 solid 2px;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+.focusCod {
+    border: #2F80ED solid 2px;
+}
+
+.divCod {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.divCod span {
+    margin: 0 30px 0 30px;
+}
+
+.emailDiv {
+    flex-direction: column;
+    position: relative;
+    transition: 0.5s linear;
+}
+
+.cod {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botaoSenha{
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    background-color: #2fed3f;
+    border: none;
+    font-weight: bold;
+    font-size: 15;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nome{
+    text-transform: capitalize;
+}
+
+.reenviar {
+    cursor: pointer;
+    color: #2F80ED;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.reenviar:active{
+    color: #2058a1;
+}
+
+.codContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.divSenha{
+    position: relative;
+    transition: 0.5s linear;
+}
+
+.divSenha form{
+    display: flex;
+    align-items: center;
+}
+
+.reenviarDiv{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.divCod {
+    transition: 0.5s linear;
+    width: 100%;
+    height: 100%;
+}
+
+.loading {
+    top: 5px;
+    width: 50px;
+    height: 40px;
+    position: relative;
+    visibility: hidden;
+}
+
+@keyframes alert-animate {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.3, 0.7);
+    }
+
+    55% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(1.2, 0.8);
+    }
+
+    80% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(1.1, 0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

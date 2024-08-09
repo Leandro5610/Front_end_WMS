@@ -1,0 +1,266 @@
+.container{
+    width: 95%;
+    display: flex;
+    margin: 10px 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    border-bottom: 3px solid #F9F9F9;
+}
+
+
+.imgDiv{
+    width: 100px;
+    padding: 10px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 9px;
+    overflow: hidden;
+}
+
+.imgDiv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.prod{
+    display: flex;
+    align-items: center;
+}
+
+.prod i{
+    color: #06b1c5;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.produtoDados{
+    height: 100%;
+    width: 70%;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.titleCheck{
+    font-size: 20px;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.dados{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+    background-color: #ECECEC;
+    border-radius: 10px;
+    
+}
+/*  */
+
+.qtd{
+    position: relative; 
+    left: -3%;
+    height: 30px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qtd:disabled{
+    color: gray;
+    border: solid 1.5px gray;                                              
+}
+
+.InputQnt{
+    position: relative;
+    left: 10%;
+    height: 30px;
+    width: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent; 
+    outline: none;
+    padding-left: 18px;
+    transition: 0.2s all linear;
+}
+.btnQndLeft{
+    position: absolute;
+    left: -15%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: #A7A7A7;
+}
+
+.btnQnd{
+    position: absolute;
+    right: -35%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: #4D71FF;
+
+}
+
+.divQtd{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.qtd p{
+    padding-right: 5px;
+}
+
+.sku{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70px;
+}
+.sku i{
+    font-size: 18px;
+    font-weight: bold;
+}
+.skuNum{
+    position: relative;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*  */
+.btnRemover{
+    font-size: 25px;
+    color: #06b1c5;
+    cursor: pointer;
+}
+
+/* CheckBox Style */
+
+.checkboxAnimate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.checkboxAnimate  label {
+    position: relative;
+    cursor: pointer;
+}
+.checkboxAnimate label input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.inputCheck {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    position: relative;
+    top: 6px;
+    margin-right: 7px;
+    transition: 0.4s;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.inputCheck::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 6px;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    transform: scale(0) rotate(-45deg);
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    transition: 0.4s;
+}
+.checkboxAnimate  label input:checked ~ .inputCheck {
+    background-color: #06b1c5;
+    border-color: #06b1c5;
+    animation-name: input-animate;
+    animation-duration: 0.7s;
+}
+
+.checkboxAnimate label input:checked ~ .inputCheck::before {
+    transform: scale(1) rotate(-45deg);
+    animation-name: input-check;
+    animation-duration: 0.2s;
+    animation-delay: 0.3s;
+}
+
+@keyframes input-animate {
+    0% {
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(1.3,0.7);
+    }
+    55% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.2,0.8);
+    }
+    80% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1.1,0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes input-check {
+    0% {
+        transform: scale(0) rotate(-45deg);
+    }
+    100% {
+        transform: scale(1) rotate(-45deg);
+    }
+}
+
+.alertOn{
+    animation-name: input-animate;
+    animation-duration: 0.3s;
+}

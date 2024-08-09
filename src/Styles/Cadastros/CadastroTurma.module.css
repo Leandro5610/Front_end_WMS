@@ -1,0 +1,170 @@
+.container{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #ECEEF2;
+}
+.baseForm{
+    width: 1200px;
+    height: 750px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display: flex;
+    transform: scale(1);
+}
+
+
+.logo{
+    position: absolute;
+    margin: 10px;
+    z-index: 1;
+}
+.AddFotos{
+    width: 600px;
+    height: 750px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formContainer{
+    width: 600px;
+    height: 750px;  
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+.titles{
+    position: relative;
+    top: -5%;
+    text-align: center;
+}
+.title{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.subTitle{
+    font-size: 20px; 
+}
+
+.slidecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: #000;
+    font-size: 22px;
+}
+
+.slider {
+    position: relative;
+    -webkit-appearance: none;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    background: #4D71FF;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    background: url('../../IMG/ponteiro.png');
+    cursor: pointer;
+}
+
+ 
+@media screen and (max-width:1440px) {
+    .baseForm{
+        transform: scale(0.9);
+    }
+    
+}
+
+@media screen and (max-height: 900px) {
+    .baseForm{
+        transform: scale(0.9);
+    }
+    
+}
+
+@media screen and (max-width:1250px) {
+    .baseForm{
+        transform: scale(0.8);
+    }
+    
+}
+
+
+@media screen and (max-height: 800px) {
+    .baseForm{
+        transform: scale(0.8);
+    }
+    
+}
+
+@media screen and (max-width:1080px) {
+    .baseForm{
+        transform: scale(0.7);
+    }
+    
+}
+
+@media screen and (max-height: 750px) {
+    .baseForm{
+        transform: scale(0.7);
+    }
+    
+}
+
+@media screen and (max-width: 890px) {
+    .baseForm{
+        transform: scale(0.6);
+    }
+    
+}
+
+@media screen and (max-height: 600px) {
+    .baseForm{
+        transform: scale(0.6);
+    }
+    
+}
+
+@media screen and (max-height: 500px) {
+    .baseForm{
+        transform: scale(0.5);
+    }
+    
+}
+
+@media screen and (max-height: 400px) {
+    .baseForm{
+        transform: scale(0.4);
+    }
+    
+}

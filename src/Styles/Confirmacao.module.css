@@ -1,0 +1,128 @@
+.container{
+    position: absolute;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 25;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmacao{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.274) 0 0px 24px 10px
+}
+
+.confirmacaoOn{
+    animation-name: animate-confirmacao;
+    animation-duration: 0.3s;
+}
+
+.certeza{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.closeConfirmacao {
+    width: 20px;
+    height: 20px;
+    color: #000;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .2s ease-in;
+}
+
+.closeConfirmacao:hover{
+    color: red;
+}
+
+.headerConfirmacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10px;
+    width: 100%;
+}
+
+.mensagemBody{
+    height: 500px;
+    width: 100%;
+}
+
+.mensagem1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    font-weight: bold;
+}
+
+.confirmarBtn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirmacaoBtn{
+    width: 130px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #2fed3f;
+    border: none;
+    font-weight: bold;
+    font-size: 15;
+    color: white;
+    text-align: center;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.voltarBtn{
+    width: 130px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #2F80ED;
+    border: none;
+    font-weight: bold;
+    font-size: 15;
+    color: white;
+    text-align: center;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+@keyframes animate-confirmacao {
+    0% {
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(1.3,0.7);
+    }
+    55% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.2,0.8);
+    }
+    80% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1.1,0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

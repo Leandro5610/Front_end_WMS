@@ -1,0 +1,321 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECEEF2;
+}
+
+
+.imgMembro {
+    position: relative;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgMembro .img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.baseList {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.title {
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #000;
+}
+
+.basePesquisa{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    display: flex;
+    justify-content: right;
+    width: 400px;
+    height: 60px;
+}
+
+.lista {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.div_lista {
+    position: relative;
+    width: 90%;
+    height: 75%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.fecharPesquisa {
+    cursor: pointer;
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 95%;
+    margin-top: 90px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.tabelaMembro  {
+    height: 50px;
+    color: #939393;
+}
+
+.tabelaMembro tr {
+    height: 50px;
+}
+
+.headerList{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: -3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleHeader{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19%;
+    height: 60px;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #A7A7A7;
+}
+.titleDelete{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    color: #FF0000;
+}
+.titleHeader1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    height: 60px;
+}
+.barra{
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #F2F2F4;
+}
+
+.header_list {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #F2F2F4;
+}
+
+.mes {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.tabelaMembro td {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 19%;
+    color: var(--black);
+    text-align: center;
+}
+
+td button {
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    color: var(--black);
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+td button:hover {
+    font-size: 25px;
+}
+
+*::-webkit-scrollbar {
+    background-color: white;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(192, 192, 192);
+    border-radius: 10px;
+}
+
+.titleList {
+    text-align: center;
+    padding: 8px;
+}
+
+.body {
+    color: #A7A7A7;
+    
+}
+
+.nome {
+    font-weight: bold;
+    color: #000;
+}
+
+.btnExcluir {
+    cursor: pointer;
+}
+
+.AddMembros {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+}
+
+.baseAddMembros {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: .5s ease-in;
+    z-index: 2;
+}
+
+.button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #69A0BA;
+    color: #69A0BA;
+    font-size: 25px;
+    right: 10px;
+}
+
+.pesquisa {
+    position: absolute;
+    height: 50px;
+    left: -300px;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+    outline: none;
+    transition: .5s ease-in;
+}
+
+.pesquisa::placeholder {
+    font-size: 20px;
+}
+
+.btnOrderTitle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.listPesquisa {
+    position: absolute;
+    width: 320px;
+    max-height: 0%;
+    border-radius: 0 0 50px 0;
+    background-color: #fff;
+    top: 20%;
+    left: -350px;
+    transition: .5s ease-in;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.listPesquisa::-webkit-scrollbar {
+    display: none;
+}
+
+.listPesquisa li {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /* top: 70px;  */
+    display: flex;
+    color: gray;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}

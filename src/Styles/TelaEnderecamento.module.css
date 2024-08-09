@@ -1,0 +1,175 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body {
+    width: 100%;
+    height: 65%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: inline-block;
+}
+
+.itensPedido{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    background-color: #cacaca;
+    box-shadow: rgba(0, 0, 0, 0.375) 0px -10px 15px 0px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.itensPedido::-webkit-scrollbar {
+   background-color: transparent;
+}
+
+.pedidoId {
+    font-family: "Cosi Azure", sans-serif;
+    margin: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    -webkit-text-stroke: 3px black;
+    color: white;
+}
+
+.confirmarButton {
+    background-color: #41C04E;
+    border-radius: 5px;
+    width: 130px;
+    height: 45px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.confirmarButton:hover {
+    border: 2px solid #41C04E;
+    background-color: #fff;
+    color: #41C04E;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cancelarButton {
+    background-color: #ff0000;
+    border-radius: 5px;
+    width: 130px;
+    height: 45px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.cancelarButton:hover {
+    border: 2px solid #ff0000;
+    background-color: #fff;
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.corredor {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.corredorSeparador {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #8D8D8D;
+    text-transform: uppercase;
+    word-break: keep-all;
+}
+
+.edificioContainer{
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img{
+    pointer-events: none
+}
+
+.modulo{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.modulo:hover{
+    transition: 0.2s linear;
+    transform: scale(1.05);
+}
+
+.andar1{
+    width: 180px;
+    height: 70px;
+    align-self: center;
+    position: relative;
+    top: -340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.andar2{
+    width: 180px;
+    height: 70px;
+    align-self: center;
+    position: relative;
+    top: -316px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.andar3{
+    width: 180px;
+    height: 70px;
+    align-self: center;
+    position: relative;
+    top: -295px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

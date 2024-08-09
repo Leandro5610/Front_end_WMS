@@ -1,0 +1,106 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: #ECEEF2;
+}
+
+.BuscaTurma {
+    position: fixed;
+    top: 3%;
+    left: 1%;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.Turmas {
+    top: 15%;
+    position: absolute;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.addTurmas {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s ease-in;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.addTurmas:hover {
+    background-color: transparent;
+    border: 5px solid #000;
+    color: #000;
+}
+
+.semTurmas {
+    background-color: rgba(0, 0, 0, 0.301);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleSemTurma {
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+}
+
+@media screen and (max-width:1270px) {
+    .Turmas {
+        width: 50%;
+
+    }
+}
+
+@media screen and (max-width:900px) {
+    .Turmas {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:780px) {
+    .Turmas {
+        bottom: 0;
+        transform: scale(.9);
+    }
+}
+
+@media screen and (max-width:690px) {
+    .Turmas {
+        transform: scale(.8);
+
+    }
+}
+
+@media screen and (max-width:610px) {
+    .Turmas {
+        transform: scale(.7);
+
+    }
+}

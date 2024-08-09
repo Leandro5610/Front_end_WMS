@@ -1,0 +1,73 @@
+.inputBox{
+  position: relative;
+  width: 465px;
+  height: 45px;
+  margin: 20px 0;
+}
+
+.inputBox input{
+  -webkit-appearance: none;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #111;
+  outline: none;
+  background: none;
+  transition: 0.5s;
+}
+
+.inputBox input[type=date]:required:invalid::-webkit-datetime-edit {
+  color: black;
+  opacity: 0;
+  font-size: 16px;
+}
+
+.inputBox input[type=date]:focus::-webkit-datetime-edit {
+  color: black;
+  opacity: 1 !important;
+  font-size: 16px;
+  transition: 1s;
+}
+
+.inputBox span{
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  padding: 5px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+  color: #4D71FF;
+  transform: translateX(10px) translateY(-23px);
+  font-size: 1em;
+  background: #fff;
+  letter-spacing: 0.2em;
+  opacity: 1;
+}
+.inputBox input:valid,
+.inputBox input:focus{
+  border: 2px solid #4D71FF;
+}
+
+.inputBox input:disabled{
+  border: 2px solid gray;
+}
+
+.inputBox input:disabled ~ span{
+  color: gray;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+

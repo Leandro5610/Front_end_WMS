@@ -1,0 +1,262 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECEEF2;
+}
+
+.tabelaContainer {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.pickingContainer {
+    width: 1235px;
+    height: 750px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #fff;
+    transform: scale(1);
+}
+
+.header {
+    height: 10%;
+    padding: 0 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.nameHeader{
+    position: relative;
+    left: 2%; 
+    top: 15%;
+
+}
+
+.tabela {
+    padding: 0 10px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.voltar {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.tabelaHead {
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #A7A7A7;
+    border-bottom: 5px solid #F2F2F4;
+}
+
+.tabelaBody {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: red;
+}
+
+.enviarProdutos {
+    font-size: 20px;
+    position: relative;
+    left: 77%;
+    bottom: 5%;
+    background-color: black;
+    color: white;
+    width: 240px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* NEW TABELA */
+
+.tabelaContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.headerListH {
+    position: absolute;
+    top: 5%;
+    width: 95%;
+    height: 65px;
+}
+
+.tabelaHistorico {
+    position: absolute;
+    width: 98%;
+    height: 65%;
+    overflow-y: scroll;
+    /* background-color: #9E9E9E; */
+}
+
+.tabelaMovimentacao {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.tabelaMovimentacaoBody {
+    height: 80%;
+}
+.tabelaMovimentacaoBody tr td{
+    width: 100px;
+}
+
+.tabelaMovimentacaoHead {
+    font-size: 20px;
+    color: #A7A7A7;
+    height: 20%;
+}
+
+.HeaderMovimentacao {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #A7A7A7;
+}
+
+.HeaderMovimentacao p {
+    width: 100px;
+    text-align: center;
+}
+
+.HeaderMovimentacao span {
+    width: 150px;
+    text-align: center;
+}
+
+.valor{
+    width: 150px;
+    text-align: center;
+    left: -20px;
+    position: relative;
+}
+
+.sku{
+    width: 150px;
+    text-align: center;
+    right: -10px;
+    position: relative;
+}
+
+.barra {
+    position: absolute;
+    bottom: 0;
+    right: 2.5%;
+    width: 95%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #F2F2F4;
+}
+
+
+@media screen and (max-width:1440px) {
+    .pickingContainer{
+        transform: scale(0.9);
+    }
+    
+}
+
+@media screen and (max-height: 900px) {
+    .pickingContainer{
+        transform: scale(0.9);
+    }
+    
+}
+
+@media screen and (max-width:1250px) {
+    .pickingContainer{
+        transform: scale(0.8);
+    }
+    
+}
+
+
+@media screen and (max-height: 800px) {
+    .pickingContainer{
+        transform: scale(0.8);
+    }
+    
+}
+
+@media screen and (max-width:1080px) {
+    .pickingContainer{
+        transform: scale(0.7);
+    }
+    
+}
+
+@media screen and (max-height: 750px) {
+    .pickingContainer{
+        transform: scale(0.7);
+    }
+    
+}
+
+@media screen and (max-width: 890px) {
+    .pickingContainer{
+        transform: scale(0.6);
+    }
+    
+}
+
+@media screen and (max-height: 600px) {
+    .pickingContainer{
+        transform: scale(0.6);
+    }
+    
+}
+
+@media screen and (max-height: 500px) {
+    .pickingContainer{
+        transform: scale(0.5);
+    }
+    
+}
+
+@media screen and (max-height: 400px) {
+    .pickingContainer{
+        transform: scale(0.4);
+    }
+    
+}

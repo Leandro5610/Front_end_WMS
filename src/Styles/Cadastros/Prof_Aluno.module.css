@@ -1,0 +1,341 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #ECEAEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voltar{
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.logo {
+    position: fixed;
+    font-size: 15;
+    right: 20px;
+    top: 20px;
+}
+
+.logoDiv {
+    width: 100%;
+    text-align: start;
+}
+
+.baseForm {
+    position: absolute;
+    width: 1300px;
+    height: 750px;
+    display: flex;
+    transform: scale(1);
+}
+
+.Form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.h1 {
+    position: absolute;
+    top: 5%;
+    font-size: 32px;
+}
+
+.formContainer {
+    height: 100%;
+    background-color: white;
+    width: 50%;
+    border-radius: 50px 0 0 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.Perfil {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: rgb(114, 237, 242);
+    background: linear-gradient(90deg, rgba(114, 237, 242, 1) 0%, rgba(83, 88, 230, 1) 100%);
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: -25px 0px 60px 0px rgba(109, 210, 240, 1);
+    -moz-box-shadow: -25px 0px 60px 0px rgba(109, 210, 240, 1);
+    box-shadow: -25px 0px 60px 0px rgba(109, 210, 240, 1);
+}
+
+.text_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    top: 0%;
+    left: -5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.text {
+    width: 300%;
+    right: -0%;
+    position: relative;
+}
+
+.font_Size {
+    font-family: "Voyage";
+    font-size: 40px;
+    text-transform: uppercase;
+    opacity: 0.1;
+}
+
+.Info {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+}
+
+.fotoDiv {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .2s ease-in;
+}
+.foto {
+    width: 100%;
+    height: 100%;
+}
+.personal_image input[type="file"] {
+   display: none;
+}
+.personal_figure {
+    position: relative;
+    width: 250px;
+    height: 250px;
+   
+}
+.personal_avatar {
+    position: absolute;
+    cursor: pointer;
+    width: 280px;
+    height: 280px;
+    left: -5%;
+    top: -5%;
+    background-image: url('https://i.pinimg.com/originals/6c/67/8c/6c678c23d360432d5dad8c4aae4d48ca.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btnFile{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 280px;
+    right: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btnFileRemove{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 280px;
+    right: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 8;
+    cursor: pointer;
+}
+
+.Nome {
+    width: 500px;
+    height: 50px;
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleNome {
+    width: 150px;
+    height: 40px;
+    margin-right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.InfoNome {
+    max-width: 350px;
+    height: 40px;
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info2 {
+    width: 500px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.titleEmail {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titleEmail i{
+    font-weight: bold;
+    color: #000;
+    display: block;
+}
+.InfoNum {
+    max-width: 250px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.InfoNum i{
+    font-weight: bold;
+    color: #000;
+    display: block;
+}
+
+
+@media screen and (max-width:1440px) {
+    .baseForm{
+        transform: scale(0.9);
+    }
+    
+}
+
+@media screen and (max-height: 900px) {
+    .baseForm{
+        transform: scale(0.9);
+    }
+    
+}
+
+@media screen and (max-width:1250px) {
+    .baseForm{
+        transform: scale(0.8);
+    }
+    
+}
+
+
+@media screen and (max-height: 800px) {
+    .baseForm{
+        transform: scale(0.8);
+    }
+    
+}
+
+@media screen and (max-width:1080px) {
+    .baseForm{
+        transform: scale(0.7);
+    }
+    
+}
+
+@media screen and (max-height: 750px) {
+    .baseForm{
+        transform: scale(0.7);
+    }
+    
+}
+
+@media screen and (max-width: 890px) {
+    .baseForm{
+        transform: scale(0.6);
+    }
+    
+}
+
+@media screen and (max-height: 600px) {
+    .baseForm{
+        transform: scale(0.6);
+    }
+    
+}
+
+@media screen and (max-height: 500px) {
+    .baseForm{
+        transform: scale(0.5);
+    }
+    
+}
+
+@media screen and (max-height: 400px) {
+    .baseForm{
+        transform: scale(0.4);
+    }
+    
+}

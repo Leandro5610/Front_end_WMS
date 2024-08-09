@@ -1,0 +1,24 @@
+.form{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
+.logo{
+    margin: 10px;
+}
+
+.column{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divInput{
+    display: flex;
+    flex-direction: column;
+}

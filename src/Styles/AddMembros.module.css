@@ -1,0 +1,53 @@
+.AddMembros{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+}
+.baseAddMembros{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 0 50px 50px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: .5s ease-in;
+    z-index: 2;
+}
+.button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #69A0BA;
+    color: #69A0BA;
+    font-size: 25px;
+    right: 10px;
+}
+.pesquisa{
+    position: absolute;
+    height: 50px;
+    left: -300px;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+    outline: none;
+    transition: .5s ease-in;
+}
+.pesquisa::placeholder{
+    font-size: 20px;
+}
