@@ -11,7 +11,7 @@ import { getAluno, getNcm, getProfessor, refresh, sendIdAluno } from "../Service
 import CadastroMedidas, { getMedida, getPelaMedida } from "../Components/Forms/CadastroMedidas";
 import { CadastroNcm, getListaNcm } from "../Components/ItensHome/CadastroNcm";
 import { Perfil } from "../Components/ItensHome/Perfil";
-import { AbrirRelatorio, Relatorios } from "../Components/Avisos/Relatorios";
+/*import { AbrirRelatorio, Relatorios } from "../Components/Avisos/Relatorios";*/
 import { dataHoraFormatter } from "../Services/formatter";
 import Bruninha from "../IMG/BruninhaAnimation.gif"
 import BruninhaSleep from "../IMG/BruninhaDormindo.gif"
@@ -234,7 +234,7 @@ export default function Home() {
             <div id="popUp" className={styles.popUp}>
                 <CadastroNcm ncms={ncms} />
             </div>
-            <Relatorios></Relatorios>
+           
             <div id='home' className={styles.home}>
                 <SideBar />
                 <div className={styles.home2} id={"home2"}>
@@ -274,7 +274,6 @@ export default function Home() {
                                     </lord-icon>
                                     <p className={styles.SubTitleMovimentacao}>Histórico de Estoque</p>
                                 </span>
-                                <button onClick={AbrirRelatorio} className={styles.relatoriosBtn}><p>Relatórios</p> <i className="fa-sharp fa-solid fa-file"></i></button>
                                 <div className={styles.baseSelect}>
                                     <InputPesquisa placeholder={"Pesquise uma Movimentação"} left={0} search={search} />
                                     <select className={styles.select} id="pesquisaMov">
@@ -499,6 +498,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+                    {/* Chabot inativo
                     <div id='chatbot' className={styles.BaseBotChat}>
                         <div id={"baseAI"} className={styles.baseAI}>
                             <div id='btnOff' onClick={fecharChat} className={styles.btnOff}>
@@ -522,11 +522,11 @@ export default function Home() {
                                 <h3 className={styles.BCTitleH3} >ChatBot</h3>
                             </span>
                             <div className={styles.iframeBotChat}>
-                                {/* Lugar do Chat */}
+        
                                 <iframe src='https://webchat.botframework.com/embed/chatbotBruna?s=-xV9QSsXK00.tFilHx8hrinZO0QkIzWZwfPxr9ide3fdpeKFzgtxhvs' style={{width: "100%", height: "100%", border: "none", fontSize:"20px"}}></iframe>
                             </div>
                         </div>
-                    </div>
+                    </div>*/}
                 </div>
             </div>
         </section >

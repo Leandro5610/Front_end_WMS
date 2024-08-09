@@ -163,6 +163,7 @@ export default function Login() {
                                 <Input width={"100%"} onChange={(e) => setCodMatricula(e.target.value)} id="numero" label="Número de Matrícula" type="number" placeholder="Digite o Número de Matricula" name="numero" />
                                 <InputSenha user={"aluno"} esqueceu={true} width={"100%"} onChange={(e) => setSenhaAluno(e.target.value)} id="senhaAluno" id_eye="eye1" label="Senha" type="password" placeholder="Digite a senha" name="senhaAluno" />
                                 <Button>Entrar</Button>
+                                <p className={styles.ramdomUser}>Para acessar como aluno use Numero de Matricula:<span>9999</span> Senha:<span>aluno</span></p>
                                 <p className={styles.telaCadastro}>Não tem uma conta? <a href="../CadastroAlunos" className={styles.btnCadastro}>Crie aqui!</a></p>
                             </form>
 
@@ -170,6 +171,7 @@ export default function Login() {
                                 <Input onChange={(e) => setNif(e.target.value)} id="nif" label="Nif" type="number" placeholder="Digite o Número de Matricula" name="numero" />
                                 <InputSenha user={"professor"} esqueceu={true} onChange={(e) => setSenhaProf(e.target.value)} id="senhaProf" id_eye="eye2" label="Senha" type="password" placeholder="Digite a senha" name="senhaProf" />
                                 <Button>Entrar</Button>
+                                <p className={styles.ramdomUser}>Para acessar como professor use Nif::<span>9999</span> Senha:<span>admin</span></p>
                                 <p className={styles.telaCadastro}>Não tem uma conta? <a href="../CadastroProfessores" className={styles.btnCadastro}>Crie aqui!</a></p>
                             </form>
                         </div>

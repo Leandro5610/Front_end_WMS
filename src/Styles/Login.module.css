@@ -135,7 +135,14 @@
 .telaCadastro {
     position: absolute;
     width: 350px;
-    bottom: -80%;
+    bottom: -60%;
+}
+.ramdomUser{
+    position: absolute;
+    bottom: -30%;
+}
+.ramdomUser span{
+  font-weight: bold;
 }
 
 .btnCadastro {
